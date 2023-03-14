@@ -17,6 +17,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <!-- Icons CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- AOS Animation CDN -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Main CSS File -->
     <link rel="stylesheet" href="./css/index.css">
     <title>U-DEV</title>
@@ -59,82 +61,92 @@
                     <h1 class="headingText">Welcome To U-DEV, The World's Most Powerful programming Solution</h1>
                     <p class="descText">U-DEV is designed with customers in mind, so you can track and analyze all of
                         your data in one central location. There are no limits to how your data can be viewed.</p>
-                    <button class="btn btn-primary">Contact Us</button>
+                    <a href="#contact" class="btn btn-primary">Contact Us</a>
                 </div>
                 <div class="col-md-6 d-none d-lg-block">
-                    <img class="w-80"
-                        src="https://demo.epic-webdesign.com/tf-essentials/v1/images/website-development.jpg"
-                        alt="U DEV" />
+                    <img class="w-80 ps-5" src="img/header.gif" alt="U DEV" />
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="about" id="about">
+    <div class="about" id="about" data-aos="fade-up">
         <div class="container-fluid">
             <div class="container text-center">
                 <h1 class="aboutText">Integrated solutions designed for small business</h1>
                 <p class="aboutDescText">Communicate with flexible tools that go where your team goes.</p>
                 <div class="row align-items-center mt-5">
-                    <div class="about-card col-md-4 col-sm-6 col-xs-12">
-                        <img class="w-100 about-img"
-                            src="https://demo.epic-webdesign.com/tf-essentials/v1/images/main-service1.png" alt="hi" />
-                        <h3 class="about-card-heading">Designer</h3>
-                        <p class="about-card-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
-                            corporis impedit, accusamus facilis amet eligendi.</p>
-                        <a href="#contact" class="about-btn">Essentials for Designers</a>
+                    <div class="col-md-4 col-sm-6 col-xs-12" data-aos="flip-left">
+                        <div class="about-card">
+                            <i class="fa fa-paint-brush icon" aria-hidden="true"></i>
+                            <h3 class="about-card-heading">UI / UX</h3>
+                            <p class="about-card-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Obcaecati
+                                corporis impedit, accusamus facilis amet eligendi.</p>
+                            <a href="#contact" class="about-btn">Essentials for Designers</a>
+                        </div>
                     </div>
-                    <div class="about-card col-md-4 col-sm-6 col-xs-12">
-                        <img class="w-100 about-img"
-                            src="https://demo.epic-webdesign.com/tf-essentials/v1/images/main-service1.png" alt="hi" />
-                        <h3 class="about-card-heading">Designer</h3>
-                        <p class="about-card-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
-                            corporis impedit, accusamus facilis amet eligendi.</p><a href="#contact"
-                            class="about-btn">Essentials
-                            for Designers</a>
+                    <div class="col-md-4 col-sm-6 col-xs-12" data-aos="flip-left">
+                        <div class="about-card">
+                            <i class="fa fa-code icon" aria-hidden="true"></i>
+                            <h3 class="about-card-heading">Web Design</h3>
+                            <p class="about-card-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Obcaecati
+                                corporis impedit, accusamus facilis amet eligendi.</p><a href="#contact"
+                                class="about-btn">Essentials
+                                for Designers</a>
+                        </div>
                     </div>
-                    <div class="about-card col-md-4 col-sm-6 col-xs-12">
-                        <img class="w-100 about-img"
-                            src="https://demo.epic-webdesign.com/tf-essentials/v1/images/main-service1.png" alt="hi" />
-                        <h3 class="about-card-heading">Designer</h3>
-                        <p class="about-card-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
-                            corporis impedit, accusamus facilis amet eligendi.</p><a href="#contact"
-                            class="about-btn">Essentials
-                            for Designers</a>
+                    <div class="col-md-4 col-sm-6 col-xs-12" data-aos="flip-left">
+                        <div class="about-card">
+                            <i class="fa fa-mobile icon" aria-hidden="true"></i>
+                            <h3 class="about-card-heading">Apps Development</h3>
+                            <p class="about-card-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Obcaecati
+                                corporis impedit, accusamus facilis amet eligendi.</p><a href="#contact"
+                                class="about-btn">Essentials
+                                for Designers</a>
+                        </div>
                     </div>
-                    <div class="about-card col-md-4 col-sm-6 col-xs-12">
-                        <img class="w-100 about-img"
-                            src="https://demo.epic-webdesign.com/tf-essentials/v1/images/main-service1.png" alt="hi" />
-                        <h3 class="about-card-heading">Designer</h3>
-                        <p class="about-card-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
-                            corporis impedit, accusamus facilis amet eligendi.</p><a href="#contact"
-                            class="about-btn">Essentials
-                            for Designers</a>
+                    <div class="col-md-4 col-sm-6 col-xs-12" data-aos="flip-left">
+                        <div class="about-card">
+                            <i class="fa fa-desktop icon" aria-hidden="true"></i>
+                            <h3 class="about-card-heading">Desktop Development</h3>
+                            <p class="about-card-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Obcaecati
+                                corporis impedit, accusamus facilis amet eligendi.</p><a href="#contact"
+                                class="about-btn">Essentials
+                                for Designers</a>
+                        </div>
                     </div>
-                    <div class="about-card col-md-4 col-sm-6 col-xs-12">
-                        <img class="w-100 about-img"
-                            src="https://demo.epic-webdesign.com/tf-essentials/v1/images/main-service1.png" alt="hi" />
-                        <h3 class="about-card-heading">Designer</h3>
-                        <p class="about-card-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
-                            corporis impedit, accusamus facilis amet eligendi.</p><a href="#contact"
-                            class="about-btn">Essentials
-                            for Designers</a>
+                    <div class="col-md-4 col-sm-6 col-xs-12" data-aos="flip-left">
+                        <div class="about-card">
+                            <i class="fa fa-trophy icon" aria-hidden="true"></i>
+                            <h3 class="about-card-heading">ML Model Design</h3>
+                            <p class="about-card-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Obcaecati
+                                corporis impedit, accusamus facilis amet eligendi.</p><a href="#contact"
+                                class="about-btn">Essentials
+                                for Designers</a>
+                        </div>
                     </div>
-                    <div class="about-card col-md-4 col-sm-6 col-xs-12">
-                        <img class="w-100 about-img"
-                            src="https://demo.epic-webdesign.com/tf-essentials/v1/images/main-service1.png" alt="hi" />
-                        <h3 class="about-card-heading">Designer</h3>
-                        <p class="about-card-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
-                            corporis impedit, accusamus facilis amet eligendi.</p><a href="#contact"
-                            class="about-btn">Essentials
-                            for Designers</a>
+                    <div class="col-md-4 col-sm-6 col-xs-12" data-aos="flip-left">
+                        <div class="about-card">
+                            <i class="fa fa-exclamation-triangle icon" aria-hidden="true"></i>
+                            <h3 class="about-card-heading">Problem Solving</h3>
+                            <p class="about-card-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Obcaecati
+                                corporis impedit, accusamus facilis amet eligendi.</p><a href="#contact"
+                                class="about-btn">Essentials
+                                for Designers</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="showcases" id="showcases">
+    <div class="showcases" id="showcases" data-aos="fade-right">
         <div class="container text-center">
             <h1 class="showCaseHeadingText">Explore Latest Projects</h1>
             <p class="showCaseText">There are many variations of passages of Lorem Ipsum available, but the
@@ -145,7 +157,8 @@
 
         <swiper-container class="mySwiper" pagination="true" pagination-clickable="true" space-between="20"
             slides-per-view="4" navigation="true" autoplay-delay="2000" autoplay-disable-on-interaction="false">
-            <swiper-slide>Slide 1</swiper-slide>
+            <swiper-slide><a href="https://gommet.netlify.app/" target="_blank"> <img
+                        src="./img/first_website.png" /></a></swiper-slide>
             <swiper-slide>Slide 2</swiper-slide>
             <swiper-slide>Slide 3</swiper-slide>
             <swiper-slide>Slide 4</swiper-slide>
@@ -158,7 +171,7 @@
     </div>
 
     <!----- start Features ----->
-    <div class="features" id="features">
+    <div class="features" id="features" data-aos="fade-up">
         <div class="container text-center">
             <h1 class="aboutText">Amazing Features</h1>
             <p class="aboutDescText">Communicate with flexible tools that go where your team goes.</p>
@@ -240,11 +253,52 @@
         </div>
     </div>
 
+    <!-- End Features -->
+
+    <!-- Start Testimoly -->
+    <div class="container" data-aos="zoom-in-up">
+        <swiper-container class="mySwiper" autoplay-delay="3000">
+            <swiper-slide class="testi-slider">
+                <img src="./img/header.gif" class="testi-img" />
+                <p class="testi-parag">The attention of a traveller, should be particularly turned to the various works
+                    of
+                    nature, to mark the distinctions of the climates he may explore, and to offer such useful
+                    observations
+                    on the different productions as may occur.</p>
+                <h6 class="testi-heading">Jennifer Smith - <span class="job-desc">Web Designer</span>
+                    </span>
+                    </span></h6>
+            </swiper-slide>
+            <swiper-slide class="testi-slider"><img src="./img/header.gif" class="testi-img" />
+                <p class="testi-parag">The attention of a traveller, should be particularly turned to the various works
+                    of
+                    nature, to mark the distinctions of the climates he may explore, and to offer such useful
+                    observations
+                    on the different productions as may occur.</p>
+                <h6 class="testi-heading">Jennifer Smith - <span class="job-desc">Web Designer</span>
+                    </span>
+                    </span></h6>
+            </swiper-slide>
+            <swiper-slide class="testi-slider"><img src="./img/header.gif" class="testi-img" />
+                <p class="testi-parag">The attention of a traveller, should be particularly turned to the various works
+                    of
+                    nature, to mark the distinctions of the climates he may explore, and to offer such useful
+                    observations
+                    on the different productions as may occur.</p>
+                <h6 class="testi-heading">Jennifer Smith - <span class="job-desc">Web Designer</span>
+                    </span>
+                    </span></h6>
+            </swiper-slide>
+        </swiper-container>
+    </div>
+
+    <!-- End Testimoly -->
+
     <!----- start Contact ----->
     <div id="contact" class="contact">
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-6" data-aos="fade-left">
                     <h3>Get in touch</h3>
                     <form>
                         <div class="mb-3">
@@ -262,9 +316,9 @@
                         <button type="submit" class="btn btn-primary">Send Message</button>
                     </form>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6" data-aos="fade-right">
                     <h3>Head Office</h3>
-                    <img src="img/logo.jpeg" alt="U DEV">
+                    <img src="img/contact-img.png" alt="U DEV">
                     <ul class="list-group">
                         <li class="list-group-item">
                             <i class="fa fa-map-marker" aria-hidden="true"></i>
@@ -273,7 +327,7 @@
                         <li class="list-group-item">
                             <i class="fa fa-envelope" aria-hidden="true"></i>
                             <a target="_blank" rel="noopener noreferrer"
-                                href="https://mail.google.com/mail/?view=cm&fs=1&to=u.developer.software@gmail.com">u.developer.software@gmail.com</a>
+                                href="https://mail.google.com/mail/?view=cm&fs=1&to=u.develop.software@gmail.com">u.developer.software@gmail.com</a>
                         </li>
                         <li class="list-group-item">
                             <i class="fa fa-phone" aria-hidden="true"></i>
@@ -285,6 +339,24 @@
         </div>
     </div>
 
+    <div class="footer">
+        <div class="container text-center">
+            <h1 class="footerText">Copyright © 2023 U-DEV. Designed by <a
+                    href="https://www.facebook.com/profile.php?id=100090854119261" class="footerTextLink">U-DEV Team</a>
+            </h1>
+            <div class="d-flex align-items-center justify-content-center gap-3 fs-3">
+                <a href="https://www.facebook.com/profile.php?id=100090854119261" target="_blank"><i
+                        class="fa fa-facebook-square text-white" aria-hidden="true"></i></a>
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=u.develop.software@gmail.com" target="_blank"><i
+                        class="fa fa-envelope text-white" aria-hidden="true"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/mahmoud-mostafa-35b879216/" target="_blank"><i
+                        class="fa fa-linkedin-square text-white" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
@@ -292,6 +364,12 @@
         crossorigin="anonymous"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 

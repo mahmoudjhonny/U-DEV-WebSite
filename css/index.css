@@ -87,11 +87,29 @@ body {
 
 .about-card {
   margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  border: 1px solid #1089d4;
+  border-radius: 10px;
+  padding: 30px 15px;
+  text-align: center;
+  transition: all 0.3s ease;
 }
 
-.about-img {
-  width: 220px !important;
-  margin-bottom: 25px;
+.icon {
+  font-size: 50px;
+  font-weight: bold;
+  margin-bottom: 40px;
+  border-radius: 50%;
+  background-color: #000;
+  width: 100px;
+  height: 100px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .about-card-heading {
@@ -176,7 +194,7 @@ swiper-slide img {
 }
 
 .features {
-  padding: 90px 0 100px;
+  padding: 90px 0 70px;
 }
 
 .features .card {
@@ -219,6 +237,40 @@ swiper-slide img {
 .features .card p {
   color: #7c8595;
   line-height: 1.7;
+}
+
+.testi-slider {
+  flex-direction: column;
+}
+
+.testi-slider .testi-img {
+  width: 9%;
+  border-radius: 50%;
+  height: 34%;
+  object-fit: cover;
+  border: 2px solid #fff;
+}
+
+.testi-slider .testi-parag {
+  font-size: 20px;
+  line-height: 32px;
+  font-style: italic;
+  margin-top: 20px;
+  color: #7c8595;
+  width: 50%;
+}
+
+.testi-heading {
+  margin-bottom: 5px;
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #1e90ff;
+}
+
+.job-desc {
+  font-size: 19px;
+  font-weight: 400;
 }
 
 .contact {
@@ -279,4 +331,22 @@ swiper-slide img {
 .contact img {
   max-width: 100%;
   margin-bottom: 1.1rem;
+}
+
+.footer {
+  background-color: #1e90ff;
+  padding: 40px 0;
+}
+
+.footerText {
+  font-size: 17px;
+  line-height: 28px;
+  font-weight: 400;
+  color: #fff;
+  margin-bottom: 15px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.footerTextLink {
+  color: #fff;
 }
