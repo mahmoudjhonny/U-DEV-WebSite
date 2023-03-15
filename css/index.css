@@ -12,6 +12,23 @@ body {
   overflow-x: hidden;
 }
 
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #4361ee;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #333d6c;
+}
+
 .navbar-brand {
   font-family: "Dosis", sans-serif;
   font-size: 28px;
