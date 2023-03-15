@@ -1,3 +1,8 @@
+:root {
+  --main-color: #4361ee;
+  --sec-color: #333d6c;
+}
+
 html {
   overflow-x: hidden;
 }
@@ -11,19 +16,11 @@ body {
   font-family: "Dosis", sans-serif;
   font-size: 28px;
   font-weight: 700;
-  color: #3b64d2 !important;
-}
-
-.navbar-toggler {
-  border: 1px solid #1089d4;
-}
-
-.navbar-toggler-icon {
-  color: #1089d4 !important;
+  color: var(--sec-color) !important;
 }
 
 .active {
-  color: #1089d4 !important;
+  color: var(--main-color) !important;
 }
 
 .present {
@@ -32,18 +29,31 @@ body {
 }
 
 .headingText {
-  color: #071e55;
-  font-size: 46px;
+  color: var(--sec-color);
+  font-size: 40px;
   font-family: "Dosis", sans-serif;
   font-weight: 700;
 }
 
-.descText {
-  margin-bottom: 30px;
-  line-height: 30px;
-  font-weight: 400;
-  color: #405263;
+@media (max-width: 1399px) {
+  .headingText {
+    font-size: 35px;
+  }
 }
+
+@media (max-width: 1199px) {
+  .headingText {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 530px) {
+  .headingText {
+    font-size: 25px;
+  }
+}
+
+/* ------- -------------- */
 
 .btn {
   font-family: "Dosis", sans-serif;
@@ -51,13 +61,13 @@ body {
   line-height: 22px;
   font-weight: 600;
   color: #fff;
-  background-color: #1089d4;
+  background-color: var(--sec-color);
   box-shadow: 0px 8px 40px 0 rgb(0 0 0 / 37%);
   text-shadow: 1px 1px 1px rgb(0 0 0 / 25%);
   letter-spacing: 1px;
   border-radius: 5px 5px;
   margin: 10px 10px 0 10px 0;
-  padding: 20px 30px;
+  padding: 15px;
   display: inline-block;
   transition: all 0.4s ease-in-out;
   -webkit-transition: all 0.4s ease-in-out;
@@ -65,15 +75,27 @@ body {
 
 .about {
   border: 1px solid #efefef;
-  padding: 90px 0 100px;
+  padding: 50px 0 50px;
   background: #fafbfc;
 }
 
 .aboutText {
-  color: #071e55;
+  color: var(--sec-color);
   font-size: 36px;
   font-family: "Dosis", sans-serif;
   font-weight: 600;
+}
+
+@media (max-width: 767px) {
+  .aboutText {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 376px) {
+  .aboutText {
+    font-size: 25px;
+  }
 }
 
 .descText {
@@ -82,6 +104,30 @@ body {
   font-weight: 400;
   color: #7c8595;
   font-size: 18px;
+}
+
+@media (max-width: 530px) {
+  .descText {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 400px) {
+  .headingText {
+    font-size: 20px;
+  }
+  .descText {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 324px) {
+  .headingText {
+    font-size: 16px;
+  }
+  .descText {
+    font-size: 11px;
+  }
 }
 
 .about-card {
@@ -95,6 +141,8 @@ body {
   text-align: center;
   transition: all 0.3s ease;
   position: relative;
+  border-radius: 5px;
+  overflow: hidden;
 }
 
 .about-card::after {
@@ -102,8 +150,8 @@ body {
   content: "";
   height: 2px;
   width: 0%;
-  background-color: #1089d4;
-  top: 0;
+  background-color: var(--main-color);
+  bottom: 0;
   left: 0;
   transition: all 0.3s ease;
 }
@@ -113,27 +161,29 @@ body {
 }
 
 .icon {
-  font-size: 50px;
+  font-size: 40px;
   font-weight: bold;
   margin-bottom: 40px;
-  border-radius: 50%;
-  width: 100px;
-  height: 100px;
-  color: #1089d4;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  color: var(--main-color);
 }
 
 .about-card-heading {
   font-size: 26px;
   color: #292929;
   margin-bottom: 15px;
+  font-family: "Dosis", sans-serif;
+  font-weight: 600;
+}
+
+@media (max-width: 1399px) {
+  .about-card-heading {
+    font-size: 22px;
+  }
 }
 
 .about-card-desc {
-  font-size: 17px;
-  line-height: 28px;
+  font-size: 14px;
+  line-height: 1.7;
   font-weight: 400;
   color: #7c8595;
   margin-bottom: 25px;
@@ -141,15 +191,21 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
+@media (max-width: 1199px) {
+  .about-card-desc {
+    font-size: 12.5px;
+  }
+}
+
 .about-btn {
   font-family: "Dosis", sans-serif;
   font-size: 15px;
   line-height: 22px;
   font-weight: 500;
-  color: #1089d4;
+  color: var(--sec-color);
   letter-spacing: 1px;
   border-radius: 5px 5px;
-  border: 1px solid #1089d4;
+  border: 1px solid var(--main-color);
   margin: 10px 10px 0 10px 0;
   padding: 20px 30px;
   text-decoration: none;
@@ -160,32 +216,30 @@ body {
 
 .about-btn:hover {
   color: #fff !important;
-  background: #3498db;
+  background: var(--main-color);
 }
 
 .showcases {
-  background-color: #1e90ff;
-  color: #fff;
+  background-color: #eff2f5;
   padding: 80px 0;
 }
 
 .showCaseHeadingText {
   font-size: 36px;
-  color: #fff;
+  color: var(--sec-color);
   margin-bottom: 10px;
-  font-weight: 600;
+  font-weight: 700;
+  font-family: "Dosis", sans-serif;
 }
 
 .showCaseText {
-  margin-bottom: 30px;
   line-height: 28px;
-  font-weight: 500;
-  color: #fff;
-  font-size: 18px;
+  color: #7c8595;
+  font-size: 16px;
 }
 
 swiper-container {
-  width: 100%;
+  width: 76%;
   height: 586px;
   color: #000;
 }
@@ -205,7 +259,7 @@ swiper-slide img {
 
 .project-slider .img {
   border-radius: 10px;
-  width: 80%;
+  width: 100%;
 }
 
 @media (max-width: 426px) {
@@ -221,9 +275,9 @@ swiper-slide img {
 }
 
 @media (max-width: 769px) {
-  .project-slider .img {
+  /* .project-slider .img {
     width: 80%;
-  }
+  } */
   swiper-container {
     height: 232px;
   }
@@ -231,14 +285,14 @@ swiper-slide img {
 
 @media (max-width: 1024px) {
   swiper-container {
-    height: 300px;
+    height: 367px;
   }
 }
 
 @media (max-width: 1441px) {
-  .project-slider .img {
+  /* .project-slider .img {
     width: 60%;
-  }
+  } */
 }
 
 .features {
@@ -259,7 +313,7 @@ swiper-slide img {
   left: 0;
   width: 0%;
   height: 2px;
-  background-color: #3b64d2;
+  background-color: var(--main-color);
   transition: all 0.3s linear;
 }
 
@@ -272,7 +326,7 @@ swiper-slide img {
 }
 
 .features .feature-icon .fa {
-  color: #3b64d2;
+  color: var(--main-color);
   font-size: 2.2rem;
 }
 
@@ -280,6 +334,7 @@ swiper-slide img {
   font-family: var(--heading-font);
   font-size: 1.4rem;
   font-weight: 600;
+  font-family: "Dosis", sans-serif;
 }
 
 .features .card p {
@@ -287,20 +342,26 @@ swiper-slide img {
   line-height: 1.7;
 }
 
+@media (max-width: 1020px) {
+  .features .card p {
+    font-size: 12.5px;
+  }
+}
+
 .testi-slider {
   flex-direction: column;
 }
 
 .testi-slider .testi-img {
-  width: 9%;
+  width: 7rem;
+  height: 7rem;
   border-radius: 50%;
-  height: 34%;
   object-fit: cover;
   border: 2px solid #fff;
 }
 
 .testi-slider .testi-parag {
-  font-size: 20px;
+  font-size: 18px;
   line-height: 32px;
   font-style: italic;
   margin-top: 20px;
@@ -308,12 +369,19 @@ swiper-slide img {
   width: 50%;
 }
 
+@media (max-width: 991px) {
+  .testi-slider .testi-parag {
+    font-size: 14px;
+    width: 100%;
+  }
+}
+
 .testi-heading {
   margin-bottom: 5px;
   font-size: 20px;
   line-height: 26px;
   font-weight: 700;
-  color: #1e90ff;
+  color: var(--sec-color);
 }
 
 .job-desc {
@@ -326,10 +394,10 @@ swiper-slide img {
 }
 
 .contact h3 {
-  font-family: var(--heading-font);
+  font-family: "Dosis", sans-serif;
   margin-bottom: 1rem;
   font-weight: 700;
-  color: #071e55;
+  color: var(--sec-color);
 }
 
 .contact .form-control {
@@ -363,7 +431,7 @@ swiper-slide img {
 
 .list-group-item .fa {
   font-size: 1.1rem;
-  color: #1089d4;
+  color: var(--main-color);
   flex: 0.05;
 }
 
@@ -382,7 +450,7 @@ swiper-slide img {
 }
 
 .footer {
-  background-color: #1e90ff;
+  background-color: var(--sec-color);
   padding: 40px 0;
 }
 
@@ -392,7 +460,7 @@ swiper-slide img {
   font-weight: 400;
   color: #fff;
   margin-bottom: 15px;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Dosis", sans-serif;
 }
 
 .footerTextLink {
